@@ -11,6 +11,13 @@
 		EE48F8C628F84B5000D679D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48F8C528F84B5000D679D4 /* ContentView.swift */; };
 		EE48F8C828F84B5100D679D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE48F8C728F84B5100D679D4 /* Assets.xcassets */; };
 		EE48F8CB28F84B5100D679D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE48F8CA28F84B5100D679D4 /* Preview Assets.xcassets */; };
+		EE48F8D728F84CBB00D679D4 /* RandomFoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48F8D628F84CBB00D679D4 /* RandomFoxView.swift */; };
+		EE48F8DA28F84E2900D679D4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EE48F8D928F84E2900D679D4 /* Kingfisher */; };
+		EE48F8DC28F84EF700D679D4 /* FoxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48F8DB28F84EF700D679D4 /* FoxModel.swift */; };
+		EE48F8DE28F84F7800D679D4 /* FoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48F8DD28F84F7800D679D4 /* FoxService.swift */; };
+		EE48F8E128F84FC000D679D4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE48F8E028F84FC000D679D4 /* Alamofire */; };
+		EE48F8E328F8526500D679D4 /* FoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48F8E228F8526500D679D4 /* FoxViewModel.swift */; };
+		EED367B128F858EC0000FD58 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED367B028F858EC0000FD58 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,11 @@
 		EE48F8C528F84B5000D679D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE48F8C728F84B5100D679D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE48F8CA28F84B5100D679D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE48F8D628F84CBB00D679D4 /* RandomFoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomFoxView.swift; sourceTree = "<group>"; };
+		EE48F8DB28F84EF700D679D4 /* FoxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxModel.swift; sourceTree = "<group>"; };
+		EE48F8DD28F84F7800D679D4 /* FoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxService.swift; sourceTree = "<group>"; };
+		EE48F8E228F8526500D679D4 /* FoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxViewModel.swift; sourceTree = "<group>"; };
+		EED367B028F858EC0000FD58 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE48F8DA28F84E2900D679D4 /* Kingfisher in Frameworks */,
+				EE48F8E128F84FC000D679D4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +65,7 @@
 		EE48F8C228F84B5000D679D4 /* SwiftUIAlamofire */ = {
 			isa = PBXGroup;
 			children = (
+				EE48F8D128F84C3000D679D4 /* FoxViewModel */,
 				EE48F8C328F84B5000D679D4 /* SwiftUIAlamofireApp.swift */,
 				EE48F8C528F84B5000D679D4 /* ContentView.swift */,
 				EE48F8C728F84B5100D679D4 /* Assets.xcassets */,
@@ -65,6 +80,50 @@
 				EE48F8CA28F84B5100D679D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE48F8D128F84C3000D679D4 /* FoxViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE48F8D528F84C7300D679D4 /* Model */,
+				EE48F8D428F84C6A00D679D4 /* Service */,
+				EE48F8D328F84C6000D679D4 /* ViewModel */,
+				EE48F8D228F84C5400D679D4 /* View */,
+			);
+			path = FoxViewModel;
+			sourceTree = "<group>";
+		};
+		EE48F8D228F84C5400D679D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE48F8D628F84CBB00D679D4 /* RandomFoxView.swift */,
+				EED367B028F858EC0000FD58 /* SwiftUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE48F8D328F84C6000D679D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE48F8E228F8526500D679D4 /* FoxViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE48F8D428F84C6A00D679D4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EE48F8DD28F84F7800D679D4 /* FoxService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EE48F8D528F84C7300D679D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE48F8DB28F84EF700D679D4 /* FoxModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +142,10 @@
 			dependencies = (
 			);
 			name = SwiftUIAlamofire;
+			packageProductDependencies = (
+				EE48F8D928F84E2900D679D4 /* Kingfisher */,
+				EE48F8E028F84FC000D679D4 /* Alamofire */,
+			);
 			productName = SwiftUIAlamofire;
 			productReference = EE48F8C028F84B5000D679D4 /* SwiftUIAlamofire.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +174,11 @@
 				Base,
 			);
 			mainGroup = EE48F8B728F84B5000D679D4;
+			packageReferences = (
+				EE48F8D828F84E2900D679D4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				EE48F8DF28F84FC000D679D4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EE48F8E428F854E600D679D4 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			productRefGroup = EE48F8C128F84B5000D679D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +206,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE48F8C628F84B5000D679D4 /* ContentView.swift in Sources */,
+				EED367B128F858EC0000FD58 /* SwiftUIView.swift in Sources */,
+				EE48F8DE28F84F7800D679D4 /* FoxService.swift in Sources */,
+				EE48F8E328F8526500D679D4 /* FoxViewModel.swift in Sources */,
+				EE48F8D728F84CBB00D679D4 /* RandomFoxView.swift in Sources */,
 				EE48F8C428F84B5000D679D4 /* SwiftUIAlamofireApp.swift in Sources */,
+				EE48F8DC28F84EF700D679D4 /* FoxModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +412,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE48F8D828F84E2900D679D4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EE48F8DF28F84FC000D679D4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EE48F8E428F854E600D679D4 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE48F8D928F84E2900D679D4 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE48F8D828F84E2900D679D4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		EE48F8E028F84FC000D679D4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE48F8DF28F84FC000D679D4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE48F8B828F84B5000D679D4 /* Project object */;
 }
